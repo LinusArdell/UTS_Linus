@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">PENDAFTARAN</string>
+
+    <array name="spin">
+        <item>Jalur Pendaftaran</item>
+        <item>Tes tertulis</item>
+        <item>Jalur Tanpa Tes</item>
+        <item>Ujian Saringan masuk</item>
+    </array>
+
+    <!--    <style name="spinner_border">-->
+    <!--        <shape>-->
+    <!--            <corners  />-->
+
+    <!--            <padding-->
+    <!--                android:bottom="10dp"-->
+    <!--                android:left="10dp"-->
+    <!--                android:right="10dp"-->
+    <!--                android:top="10dp" />-->
+
+    <!--            <stroke-->
+    <!--                android:width="2dp"-->
+    <!--                android:color="@color/skyblue" />-->
+    <!--        </shape>-->
+    <!--    </style>-->
+</resources>
