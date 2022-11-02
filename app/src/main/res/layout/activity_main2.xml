@@ -7,14 +7,45 @@
     tools:context=".MainActivity2">
 
     <TextView
-        android:id="@+id/tv_formulir"
+        android:id="@+id/tv_konfirmasi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="FORMULIR PENDAFTARAN"
+        android:text="Konfrimasi Pendaftaran"
+        android:textSize="40px"
+        android:layout_marginTop="20px"
         android:layout_centerHorizontal="true"
-        android:textColor="#01030E"
-        android:textSize="50px"
-        android:textStyle="bold"/>
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_konfirmasi"
+        android:text="Nama"
+        android:layout_marginTop="80px"
+        android:layout_marginLeft="25px"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tv_nomor_pendaftaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nomor Pendafataran"
+        android:layout_below="@+id/tv_nama"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="25px"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_spin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilihan"
+        android:layout_below="@+id/tv_nomor_pendaftaran"
+        android:layout_marginTop="50px"
+        android:layout_marginLeft="25px"
+        android:textColor="@color/black"
+        />
 
 </RelativeLayout>

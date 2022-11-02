@@ -48,6 +48,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else {
                     Intent pindah = new Intent(MainActivity.this, MainActivity2.class);
+                    pindah.putExtra("nama", nama);
+                    pindah.putExtra("nomor", nomorPendaftaran);
+                    pindah.putExtra("spin", dropDown);
                     startActivity(pindah);
                 }
             }
