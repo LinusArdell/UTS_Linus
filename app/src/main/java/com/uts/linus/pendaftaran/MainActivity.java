@@ -10,11 +10,12 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
     EditText etnama, etnomor;
-    String nomorPendaftaran, nama, dropDown;
+    String nomorPendaftaran, nama, dropDown, checkbox;
     Button button_daftar;
     CheckBox konfirm;
     Spinner spinner;
@@ -39,12 +40,19 @@ public class MainActivity extends AppCompatActivity {
                 nama = etnama.getText().toString();
                 nomorPendaftaran = etnomor.getText().toString();
                 dropDown = spinner.getSelectedItem().toString();
+                checkbox = konfirm.getText().toString();
 
                 if (nama.trim().equals("")){
                     etnama.setError("Nama wajib diisi");
                 }
                 else if (nomorPendaftaran.trim().equals("")){
                     etnomor.setError("Nomor pendaftaran wajib diisi");
+                }
+                else if (dropDown.trim().equals("Jalur Pendaftaran")){
+                    Toast.makeText(MainActivity.this, "Pilih Jalur pendaftaran", Toast.LENGTH_SHORT).show();
+                }
+                else if (!konfirm.isChecked()){
+                    Toast.makeText(MainActivity.this, "Silahkan Konfirmasi Pendaftaran", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Intent pindah = new Intent(MainActivity.this, MainActivity2.class);
